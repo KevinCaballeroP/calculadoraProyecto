@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 62.5%;
+}
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+span.icono-x{
+    font-size: 2.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 4px;
+}
+.icono-Q-moneda-span{
+    display: inline-flex;
+    width: 40px;
+    height: 100%;
+    border: 1px solid #754897;
+    border-radius: 8px 0 0 8px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #ffffff;
+}
+main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.sectionConteiner{
+    width: 430px;
+    min-width: 320px;
+    min-height: 520px;
+    padding: 40px;
+    font-size: 1.6rem;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+}
+.sectionConteiner label{
+    font-size: 1.6rem;
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: black;
+    line-height: 1.8rem;
+}
+.conteiner-tipoModeneda{
+    width: 100%;
+}
+select#monedaOpcion{
+    width: 100%;
+    height: 40px;
+    display: block;
+    padding: .6em 1.4em .5em .8em;
+    font-weight: 500;
+    border-radius: 8px;
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid #754897;
+    margin-bottom: 10px;
+}
+.conteiner-inversion{
+    width: 100%;
+}
+div.conteiner-Q, div.conteiner-respuesta > div{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.conteiner-Q input{
+    width: calc(100% - 90px);
+    padding: 0 10px;
+    border: 1px solid #754897;
+    outline: none;
+}
+#button-limpiar-inversion{
+    width: 45px;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #754897;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+}
+div.tasaIntereses > div{
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+div.container-porcentaje{
+    width: calc(65% - 8px);
+    height: 100%;
+    display: flex;
+}
+div.container-porcentaje input{
+    width: calc(100% - 45px);
+    height: 100%;
+    padding: 0 10px;
+    border: 1px solid #754897;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+}
+div.container-porcentaje span{
+    display: inline-flex;
+    width: 45px;
+    height: 100%;
+    border: 1px solid #754897;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 0 8px 8px 0;
+}
+#tipoInteres, #tipoCapitalizacion{
+    width: 35%;
+    height: 100%;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid #754897;
+}
+.container-periodo div{
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-periodo input{
+    width: calc(65% - 8px);
+    height: 100%;
+    padding: 0 10px;
+    border: 1px solid #754897;
+    border-radius: 8px;
+    outline: none;
+}
+.container-periodo select{
+    width: 35%;
+    height: 100%;
+    padding: 10px;
+    font-weight: 500;
+    border: 1px solid #754897;
+    color: black;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.buttones{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttones button{
+    width: 120px;
+    height: 50px;
+    background-color: beige;
+    border-radius: 10px;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttones button:hover{
+    background-color: white;
+    border: 2px solid #545666;
+    color: black;
+}
+#repuestaMonto{
+    font-size: 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+.buttones button:hover .icono-setting{
+    transform: rotate(180deg);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.conteiner-respuesta{
+    width: 100%;
+}
+div.conteiner-respuesta > div input.respuestas{
+    width: calc(100% - 45px);
+    width: calc( 100% - 43.6px);
+    height: 100%;
+    padding: 0 10px;
+    border: 1px solid #d8dee9;
+    outline: none;
+    border-radius:0 8px 8px 0;
+    background-color: #e9ecef;
+    caret-color: transparent;
+    font-size: 1.5rem;
+}
