@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interes Compuesto</title>
+    <link rel="stylesheet" href="./calculadoraP.css">
+</head>
+<body>
+    <main>
+    <h1>Calculadora Interes Compuesto</h1>
+    <section class="sectionConteiner">
+        <div class="conteiner-tipoModeneda">
+            <label for="tipoMondeda">Seleccione El Tipo De Moneda</label>
+            <select name="tipoMonedaOpcion" id="monedaOpcion">
+                <option value="$">Dolares($)</option>
+                <option value="Q">Quetzales(Q)</option>
+            </select>
+        </div>
+        <div class="conteiner-inversion">
+            <label for="inversionInicial">Inversion Inicial</label>
+            <div class="conteiner-Q">
+                <span class="icono-Q-moneda-span" id="span-icono-q-inversion">Q</span>
+                <input type="number" id="number-inversion" min="1" placeholder="10,000.00">
+                <button type="button" id="button-limpiar-inversion">
+                    <span class="icono-x">Clear</span>
+                </button>
+            </div>
+        </div>
+        <div class="tasaIntereses">
+            <label for="tasaInteres">Tasa de Interes</label>
+            <div>
+            <div class="container-porcentaje">
+                <input type="number" id="input-tasa-interes" min="0" placeholder="2.75%">
+                <span class="span-icono-porcentaje" id="span-icono-%">%</span>
+            </div>
+                <select name="tipoInteres" id="tipoInteres">
+                    <option value="Anual">Anual</option>
+                    <option value="Mensual">Mensual</option>
+                    <option value="Semestral">Semestral</option>
+                    <option value="Trimestral">Trimestral</option>
+                    <option value="Cuatrimestres">Cuatrimestres</option>
+                    <option value="Bimestral">Bimestral</option>
+                </select>
+            </div>
+        </div>
+        <div class="capitalizacion-container">
+            <label for="Capitalizacion">Capitalizacion</label>
+            <select name="tipoCapitalizacion" id="tipoCapitalizacion">
+                <option value="Anual">Anual</option>
+                <option value="Mensual">Mensual</option>
+                <option value="Semestral">Semestral</option>
+                <option value="Trimestral">Trimestral</option>
+                <option value="Cuatrimestres">Cuatrimestres</option>
+                <option value="Bimestral">Bimestral</option>
+            </select>
+        </div>
+        <div class="container-periodo">
+            <label for="Periodo">Periodo</label>
+            <div>
+                <input type="number" id="Periodo" min="1" placeholder="1 year">
+                <select name="periodoSelect" id="periodoSelect">
+                    <option value="Años">Años</option>
+                    <option value="Meses">Meses</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttones">
+            <button type="button" id="button-calcular">
+                <span class="icono-setting">settings</span>Calcular 
+            </button>
+            <button type="button" id="button-reinicio">
+                <span class="icono-setting">Clear</span>Reinicio 
+            </button>
+        </div>
+        <div class="conteiner-respuesta">
+            <label for="valorFuturo">Valor futuro</label>
+            <div>
+                <span class="icono-Q-moneda-span" id="icono-Q-moneda">Q</span>
+                <input type="text" id="repuestaMonto" onkeydown="return false" class="respuestas">
+            </div>
+        </div>
+        <div class="conteiner-respuesta">
+            <label for="cantidadInteres">Cantidad Interes</label>
+            <div>
+                <span class="icono-Q-moneda-span" id="icono-Q-interes">Q</span>
+                <input type="text" id="cantidadinteres-respuesta" onkeydown="return false" class="respuestas">
+            </div>
+        </div>
+    </section>
+    <script src="./calculadoraP.js"></script>
+</main>
+</body>
+</html>
